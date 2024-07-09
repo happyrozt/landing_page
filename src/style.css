@@ -1,0 +1,1883 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+ font-family: 'League Spartan', sans-serif;;
+}
+.navBar {
+    width: 100%;
+    padding: 1.5rem;
+    display: flex;
+    justify-content: space-around;
+}
+
+
+.logo_and_titltDiv {
+    display: flex;
+}
+
+.logoImgDiv {
+    width: 5%;
+    height: 4%;
+
+}
+
+.logoImgDiv img {
+    width: 100%;
+    height: auto;
+}
+
+.companyName {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 1rem;
+    color: #5d52ba;
+    font-weight: 900;
+    font-size: 20px;
+}
+
+.companyName p {
+    color: #f65129;
+    font-size:10px;
+    font-weight: 800;
+    padding-top:.1rem ;
+    
+}
+
+.navLiksandButton {
+    display: flex;
+    justify-content: space-between;
+}
+
+.navLinkDiv {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 8%;
+    gap: 4rem;
+    align-items: center;
+   
+
+}
+
+.navLinkDiv a {
+    text-decoration: none;
+    justify-content: center;
+    font-size: 17px;
+    font-weight: 100;
+    color: #717275;
+    font-family: 'League Spartan', sans-serif;
+
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    font-family: 'League Spartan', sans-serif;
+    font-size: 18px;
+    top: 2rem;
+    left: 0rem;
+    z-index: 4;
+}
+
+.dropdown-content a {
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    border-bottom: 1px solid lightgray;
+    font-family: 'League Spartan', sans-serif;
+    font-weight: 100;
+    color: #a6a8a9;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+ 
+.dropbtn .fa-chevron-down  {
+    font-size: 14px;
+}
+
+
+.navLinkDiv a:hover {
+    color: #f65129;
+
+}
+
+.headerButtonDiv {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+.registerButton {
+    background-color: white;
+    color: #717275;
+    background-color: white;
+    border: 1px solid white;
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+
+.registerButton:hover {
+    color: orangered;
+}
+
+.loginButton {
+    background-color: #f65129;
+    color: white;
+    font-size: 1.2rem;
+    width: 5rem;
+    border-radius: 23px;
+    padding: .7rem;
+    width: 5.5rem;
+    border: none;
+}
+
+.loginButton:hover {
+    background-color: #0dcaf0;
+
+}
+
+.sectionOne {
+    position: relative; 
+    box-sizing: border-box;
+    width: 100%;
+    height: 80vh;
+    background-image: url('../src/assets/images/close-up-young-business-team-working.jpg');
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #fff; 
+    z-index: 2;
+    
+}
+
+.sectionOne::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); 
+    z-index: -2;
+    opacity: .1; 
+}
+
+
+
+
+
+.sectionOneContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: #5d52ba;
+    height: 100%;
+    justify-content: space-evenly;
+    opacity: 0.9;
+}
+
+.sectionOneLeftDIv {
+    color: white;
+}
+
+.sectionOneLeftDIv P {
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+
+.sectionOneLeftDIv h1 {
+    font-size: 3.3rem;
+    font-weight: 600;
+}
+
+.sectionOneLeftDIv button {
+    background-color:#5d52ba;
+    color:#0dcaf0;
+    padding: 1rem;
+    border: 2px solid #0dcaf0;
+    border-radius: 28px;
+}
+
+.sectionOneLeftDIv button:hover {
+    background-color: #0dcaf0;
+    color: white;
+    border-radius: 28px;
+}
+
+.sectionOneRightDiv {
+    display: flex;
+    flex-direction: column;
+    background-color: #7f73eb;
+    width: 40%;
+    padding: 2rem;
+    border-radius: 1rem;
+    position: relative;
+    z-index: 3;
+
+}
+
+.sectionOneH1div {
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.sectionOneInputdiv {
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.user-icon {
+    position: absolute;
+    right: 47%;
+    top: 44%;
+}
+.fa-user{
+    color: #5461bf;
+}
+
+.user-input-div {
+    width: 100%;
+    border: none;
+    outline: none;
+}
+
+.location-input-field {
+    width: 100%;
+    border: none;
+    outline: none;
+}
+
+.fa-location-dot {
+    color: #5461bf;
+}
+
+.location-icon {
+    position: absolute;
+    right: 29.5%;
+    top: 44%;  
+}
+
+.user-input-div input {
+    padding: 1rem;
+    border-radius: 3rem;
+    background-color: white;
+    border: 1px solid white;
+    width: 97%;
+    outline: none;
+    border: none;
+}
+.location-input-field input {
+    padding: 1rem;
+    border-radius: 3rem;
+    background-color: white;
+    border: 1px solid white;
+    width: 97%;
+    outline: none;
+    border: none;
+}
+
+
+.sectionOneButtondiv {
+    width: 100%;
+}
+
+.FindJobButton {
+    width: 100%;
+    padding: 1rem;
+    border-radius: 3rem;
+    background-color: #5d52ba;
+    color: white;
+    border: none;
+    outline: none;
+    font-size: 1rem;
+}
+
+.FindJobButton:hover {
+    background-color: #0dcaf0;
+}
+
+.keywordDiv {
+    display: flex;
+    justify-content: flex-start;
+    padding-top: 1rem;
+    align-items: center;
+    gap: 1rem;
+
+}
+
+.keywordDiv button {
+    padding: .3rem;
+    border-radius: 14px;
+    background-color: #7f73eb;
+    border-radius: 1px solid white;
+    color: white;
+    border: 1px solid white;
+    outline: none;
+}
+
+.keywordDiv button:hover {
+    padding: .3rem;
+    border-radius: 14px;
+    background-color: white;
+    color: #7f73eb;
+}
+
+.keywordDiv p {
+    color: white;
+}
+
+
+.sectionTwo {
+    width: 100%;
+    height: 30rem;
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+}
+
+.sectionTwoContainer {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+.sectionTwoHeading h2 {
+    padding: 2rem;
+    font-size: 3rem;
+    font-weight: 600;
+}
+
+.sectionTwoButtonDiv {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.sectionTwoButtonDiv button {
+    width: 10rem;
+    height: 10rem;
+    border-radius: 50%;
+    background-color: #5d52ba;
+    color: white;
+    border: 8px solid #7f73eb;
+}
+
+.button-count {
+    position: absolute;
+    background-color: #0dcaf0;
+    border-radius: 50%;
+    width: 3rem;
+    height: 3rem;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    left: 26%;
+    top: 125%;
+    font-size: 15px;
+}
+
+.button-count2 {
+    position: absolute;
+    background-color: #0dcaf0;
+    border-radius: 50%;
+    width: 3rem;
+    height: 3rem;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    left:39%;
+    top: 125%;
+    font-size: 15px;
+}
+
+.button-count3 {
+    position: absolute;
+    background-color: #0dcaf0;
+    border-radius: 50%;
+    width: 3rem;
+    height: 3rem;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    left:51.5%;
+    top: 125%;
+    font-size: 15px;
+}
+
+.button-count4 {
+    position: absolute;
+    background-color: #0dcaf0;
+    border-radius: 50%;
+    width: 3rem;
+    height: 3rem;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    left:64%;
+    top: 125%;
+    font-size: 15px;
+}
+
+.button-count5 {
+    position: absolute;
+    background-color: #0dcaf0;
+    border-radius: 50%;
+    width: 3rem;
+    height: 3rem;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    left:77%;
+    top: 125%;
+    font-size: 15px;
+}
+
+.sectionTwoButtonDiv button:hover {
+
+    border: 8px solid white;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.custom-icon {
+    font-size: 30px;
+}
+
+.sectionTwoButtonDiv p {
+    padding: 0.7rem;
+}
+
+.fa-solid {
+    font-size: 30px;
+}
+
+.fa-brands {
+    font-size: 30px;
+}
+
+.sectionThree {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 30rem;
+    flex-direction: row;
+}
+
+.sectionThreeContainer {
+    display: flex;
+    flex-direction: row;
+    gap: 1.5rem;
+    width: 100%;
+    justify-content: inherit;
+}
+
+/* .sectionthreeImgdiv {
+    width: 20rem;
+    height: 25rem;
+    background-size: cover;
+
+} */
+
+/* .sectionthreeImgdiv img {
+    width: 100%;
+    height: 100%;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+} */
+
+
+.sectionthreeImgleftdiv {
+    width: 20rem;
+    height: 25rem;
+    background-size: cover;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+.img-div {
+    background-color: #5461bf;
+    display: flex;
+    height: 9rem;
+    border-top: 35px solid #0dcaf0;
+    padding: 1rem;
+    margin: 1rem;
+    border-radius: 25px;
+    flex-direction: column;
+    gap: .5rem;
+    width: 12rem;
+}
+
+.card-title-div {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.card-investor-div {
+    color: white;
+    justify-content: flex-start;
+    display: flex;
+}
+
+/* .sectionthreeImgleftdiv img {
+    width: 100%;
+    height: 100%;
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+    background-image: url(../src/assets/images/portrait-beautiful-young-woman.jpg);
+    background-size: cover;
+} */
+
+
+.sectionthreeImgleftdiv  {
+    width: 20%;
+    height:auto;
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+    background-image: url(../src/assets/images/professional-asian-businesswoman-gray-blazer.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.sectionthreeImgRightdiv {
+    width: 20%;
+    height:auto;
+    background-image: url(../src/assets/images/horizontal-shot-happy-mixed-race-females.jpg);
+    background-size: cover;
+    background-position: center;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.goto-button-div {
+    background-color: #f65129;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: .2rem;
+    padding: .9rem;
+    border-radius: 22px;
+    font-size: 1rem;
+}
+
+.goto-button-div:hover {
+    background-color: #0dcaf0;
+    color: white;
+   
+}
+
+.fa-instagram {
+   font-size: 1rem;
+}
+
+
+
+.sectionThreeTextDiv {
+    background-color: #0dcaf0;
+    height: 25rem;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    padding: 4rem;
+    width: 43%;
+}
+
+
+.sectionThreeHeadingDiv {
+    display: flex;
+    color: white;
+    justify-content: flex-start;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    font-size: 1.9rem;
+    font-weight: 500;
+  
+}
+
+.sectionThreeTextDiv p {
+    color: white;
+    font-size: 17px;
+    line-height: 28px;
+}
+
+.getToKnowButton {
+    width: 7.5rem;
+    padding: .6rem;
+    border-radius: 30px;
+    background-color: #0dcaf0;
+    color: white;
+    border: 2px solid white;
+    font-size: 13px;
+}
+
+.getToKnowButton:hover {
+    background-color: white;
+    color: red;
+}
+
+.sectionThreeButton {
+    padding-top: 1rem;
+    display: flex;
+    gap: 1rem;
+}
+
+.expolreButton {
+    background-color: #0dcaf0;
+    color: white;
+    border: 4px solid #0dcaf0;
+    font-size: 15px;
+}
+
+.sectionfourContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+}
+
+.sectionfourContainer h1 {
+    font-size: 2.3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+}
+
+.sectionfourContainer p {
+    font-size: 20px;
+    line-height: 2rem;
+    color: #a7a9aa;
+}
+
+.sectionfourContainer p .simpletext {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #a7a9aa;
+
+}
+
+.sectionfourContainer p .boldText {
+    font-weight: 600;
+    color: #717276;
+
+}
+
+.sectionfourTableDiv {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 7rem;
+    gap:1.5rem;
+    justify-content: space-evenly;
+    align-items: center;
+    /* height: 55rem; */
+
+}
+
+.fisrtListContainer {
+    display: flex;
+    width: 95%;
+    height: 8.5rem;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+}
+
+.imgDiv {
+    display: flex;
+    width: 5rem;
+    height: 80%;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+
+}
+
+.imgDiv img {
+    width: 70%;
+    height: 70%;
+
+}
+
+.titleDiv {
+    display: flex;
+    flex-direction: column;
+    padding-left: .5rem;
+
+}
+
+.listlinks {
+    display: flex;
+    gap: 1rem;
+
+}
+
+.h1div {
+    font-size: 1.5rem;
+    font-weight: 600;
+    width: 100%;
+}
+
+.h1div:hover {
+    font-size: 1.5rem;
+    font-weight: 600;
+    width: 100%;
+    color: #f65129;
+}
+
+.span-style {
+    color: #5461bf;
+}
+
+.fa-window-maximize  {
+    font-size: 20px;
+
+}
+
+.fa-solid {
+    /* background-color: white; */
+    font-size: 20px;
+
+}
+
+.linkContainer {
+    display: flex;
+    gap: 1rem;
+}
+
+.spanContainer {
+    display: flex;
+    gap: 5rem;
+}
+
+
+.internshipButton {
+    border-radius: 20px;
+    width: 5rem;
+    background-color: #5d52ba;
+    border: none;
+    padding: .4rem;
+    color: white;
+    font-size: 12px;
+}
+
+
+.internshipButton:hover {
+    background-color: #f65129;
+    border: 2px solid #f65129;
+    color: white;
+}
+
+
+.FreelanceButton {
+    background-color:#f0f8ff;
+    border: none;
+    color: #6e8bda;
+    border-radius: 20px;
+    width: 5rem;
+    padding: .3rem;
+    font-size: 12px;
+}
+
+.FreelanceButton:hover {
+    background-color: #f65129;
+    border: 2px solid #f65129;
+    color: white;
+}
+
+.listButtonDiv {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.AppleBUttonDiv {
+    padding: 1rem;
+}
+
+.AppleBUttonDiv button {
+    background-color: #f65129;
+    border: 2px solid #f65129;
+    color: white;
+    padding: .9rem;
+    border-radius: 23px;
+    width: 7rem;
+}
+
+
+.AppleBUttonDiv button:hover {
+    background-color: #0dcaf0;
+    border: 2px solid #0dcaf0;
+}
+
+.fisrtListContainerMianContainer {
+    display: flex;
+    height: 100%;
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.location {
+    color: #a7a9aa;
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 2rem;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    gap: .5rem;
+}
+
+.listHour {
+    color: #a7a9aa;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 2rem;
+    width: 10rem;
+    display: flex;
+    gap: .3rem;
+}
+
+.listrPrize {
+    color: #a7a9aa;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 2rem;
+    width: 8rem;
+}
+
+.fisrtListContainer:hover {
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.secondtListContainer {
+    display: flex;
+    width: 95%;
+    height: 8.5rem;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.thirdtListContainer {
+    display: flex;
+    width: 95%;
+    height: 8.5rem;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+}
+
+.thirdtListContainer:hover {
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+
+.forthListContainer {
+    display: flex;
+    width: 95%;
+    height: 8.5rem;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+
+
+.fifthListContainer {
+    display: flex;
+    width: 95%;
+    height: 8.5rem;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+}
+
+.fifthListContainer:hover {
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.location {
+    width: 10rem;
+}
+
+
+
+.paginationDiv {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.numberDiv {
+    border-radius: 50%;
+    border: 1px solid #a7a9aa;
+    width: 2.7rem;
+    height: 2.7rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #a7a9aa;
+
+}
+
+
+.numberDiv:hover {
+    background-color: #0dcaf0;
+    border: 2px solid #0dcaf0;
+    color: white;
+}
+
+
+
+.prve_next {
+    border-radius: 50%;
+    border: 1px solid white;
+    width: 2.7rem;
+    height: 2.7rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #a7a9aa
+}
+
+.prve_next:hover {
+    background-color: #0dcaf0;
+    border: 2px solid #0dcaf0;
+    color: white;
+}
+
+
+.SectionFivecontainer {
+    display: flex;
+    padding: 3rem;
+    justify-content: space-evenly;
+}
+
+.sectionFioveRightContainer {
+    background-image: url('../src/assets/images/people-working-as-team-company.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 40%;
+    height: 30rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+   
+}
+
+.you-tube-div {
+    width :5rem;
+   background-color: #f65129;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   height: 5rem;
+   border-radius: 50%;
+   color: white;
+}
+
+.sectioinFiveLeftContainer {
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+    background-color: #5d52ba;
+    justify-content: center;
+    align-items: center;
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+  
+
+}
+
+
+.section5heading {
+    font-size: 2.5rem;
+    color: white;
+
+}
+
+.section5text {
+    color: white;
+    line-height: 1.5rem;
+    font-size: 1rem;
+    padding: 1rem;
+    font-weight: 300;
+}
+
+.section5ActiveUserDiv {
+    display: flex;
+    justify-content: flex-start;
+    gap: 3rem;
+}
+
+.userNumber {
+    font-size: 3.5rem;
+    color: white;
+}
+
+.userTEXT {
+    font-size: 1rem;
+    color: #0dcaf0;
+}
+
+.openingJobNumber {
+    font-size: 3.5rem;
+    color: white;
+}
+
+.openinigJobText {
+    font-size: 1rem;
+    color: #0dcaf0;
+}
+
+.cardContainer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    box-sizing: border-box;
+    gap: 3rem;
+    padding: 16px;
+}
+
+.card1 {
+    width: 100%;
+    height: 40rem;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    border: 2px solid whitesmoke;
+    border-radius: 10px;
+}
+
+.card1:hover {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+}
+
+.card1Img {
+    background-image: url(../src/assets/images/it-professional-works-startup-project.jpg);
+    width: 100%;
+    height: 20rem;
+    background-size: cover;
+    background-position: center;
+}
+
+.card2 {
+    width: 100%;
+    height: 40rem;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    border: 2px solid whitesmoke;
+    border-radius: 10px;
+}
+
+.card2:hover {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+}
+
+.card2Img {
+    background-image: url(../src/assets/images/marketing-assistant.jpg);
+    width: 100%;
+    height: 20rem;
+    background-size: cover;
+    background-position: center;
+}
+
+
+.card3 {
+    width: 100%;
+    height: 40rem;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    border: 2px solid whitesmoke;
+    border-radius: 10px;
+}
+
+.card3:hover {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+}
+
+.card3Img {
+    background-image: url(../src/assets/images/coding-man.jpg);
+    width: 100%;
+    height: 20rem;
+    background-size: cover;
+    background-position: center;
+}
+
+
+
+.card4 {
+    width: 100%;
+    height: 40rem;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    border: 2px solid whitesmoke;
+    border-radius: 10px;
+}
+
+.card4:hover {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+}
+
+.card4Img {
+    background-image: url(../src/assets/images/pretty-blogger-posing-cozy-apartment.jpg);
+    width: 100%;
+    height: 20rem;
+    background-size: cover;
+    background-position: center;
+}
+
+
+
+.card5 {
+    width: 100%;
+    height: 40rem;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    border: 2px solid whitesmoke;
+    border-radius: 10px;
+}
+
+.card5:hover {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+}
+
+.card5Img {
+    background-image: url(../src/assets/images/paper-analysis.jpg);
+    width: 100%;
+    height: 20rem;
+    background-size: cover;
+    background-position: center;
+}
+
+
+
+
+.card6 {
+    width: 100%;
+    height: 40rem;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    border: 2px solid whitesmoke;
+    border-radius: 10px;
+}
+
+.card6:hover {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+}
+
+.card6Img {
+    background-image: url(../src/assets/images/logo-designer-working-computer-desktop.jpg);
+    width: 100%;
+    height: 20rem;
+    background-size: cover;
+    background-position: center;
+}
+
+.buttondiv {
+    display: flex;
+    padding: 1rem;
+    gap: 1rem;
+    justify-content: left;
+    align-items: end;
+    width: 100%;
+    height: 100%;
+}
+
+.buttondiv button {
+    width: 4rem;
+    height: 2rem;
+}
+
+.juniorButton {
+    border-radius: 15px;
+    border: none;
+    background-color: #5d52ba;
+    outline: none;
+    color: white;
+    font-size: .7rem;
+}
+
+.juniorButton:hover {
+
+    background-color: #f65129;
+    outline: none;
+    color: white;
+}
+
+.contactButton {
+    border: none;
+    outline: none;
+    border-radius: 15px;
+    color: #5d52ba;
+    font-size: .7rem;
+}
+
+
+.contactButton:hover {
+    border: none;
+    color: white;
+    background-color: #f65129;
+}
+
+
+.contentDiv {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+
+.bookmark-icondiv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.fa-bookmark {
+    color: #5d52ba;
+    font-size: 1.2rem;
+}
+
+.fa-bookmark:hover {
+    color: #f65129;
+}
+
+
+.fa-heart {
+    color: #5d52ba;
+    font-size: 1.2rem;
+}
+
+.fa-heart:hover {
+    color: #f65129;
+}
+
+
+.contentdiv-heading {
+    font-size: 1.5rem;
+    padding: .5rem;
+    font-weight: 600;
+}
+.contentdiv-heading:hover {
+    color: #f65129;
+} 
+
+.content-icondiv {
+    display: flex;
+    padding: .5rem;
+    justify-content: space-between;
+}
+
+.content-imgdiv-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.content-imgdiv {
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.30) 0px 5px 15px;
+    border-radius: 50%;
+    height: 3rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content-imgdiv img {
+    width: 2.5rem;
+    height: 1;
+    background-position: center;
+
+}
+
+.location-time-div {
+    display: flex;
+    padding: .5rem;
+    gap: 1rem;
+    border-bottom: 2px solid whitesmoke;
+}
+
+
+.button-prizeDiv {
+    display: flex;
+    padding: .5rem;
+    justify-content: space-between;
+}
+
+.button-prizeDiv button {
+    background-color: #f65129;
+    padding: 1rem;
+    border-radius: 25px;
+    border: none;
+    outline: none;
+    color: white;
+}
+
+
+.button-prizeDiv button:hover {
+    background-color: #0dcaf0;
+
+}
+
+.job-list-butoon-div {
+    display: flex;
+    justify-content: flex-end;
+    padding: 5rem;
+}
+
+.job-list-butoon-div button {
+    padding: 1.5rem;
+    background-color: #f65129;
+    color: white;
+    border-radius: 35px;
+    font-size: 1.5rem;
+    outline: none;
+    border: none;
+}
+
+/* .section-sevean-container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    background-color: #f0f8ff;
+    padding: 1rem;
+    width: 100%;
+    height: 100vh;
+}
+
+.review-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    padding: .5rem;
+
+
+}
+
+.card-one {
+    background-color: white;
+    border: 2px solid whitesmoke;
+    width: 47%;
+    height: 64vh;
+    border-radius: 20px;
+    line-height: 2.5rem;
+    font-size: 1.9rem;
+    padding: 1rem;
+    color: #717275;
+}
+
+.card-two {
+    background-color: white;
+    border: 1px solid whitesmoke;
+    box-shadow: rgba(0, 0, 0, 0.30) 0px 5px 15px;
+    width: 40%;
+    height: 60vh;
+}
+
+.conatiner-heading {
+    color: black;
+    font-size: 3rem;
+    font-weight: 800;
+}
+
+.review {
+    display: flex;
+    flex-direction: column;
+}
+
+.review-heading {
+    display: flex;
+    padding: 1rem;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.card-one-imgdiv {
+    width: 3.5rem;
+    height: 3.5rem;
+    border-radius: 50%;
+    box-shadow: rgba(0, 0, 0, 0.30) 0px 5px 15px;
+}
+
+.card-one-imgdiv img {
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+}
+
+.heading-row {
+    display: flex;
+    gap: 1rem;
+} */
+
+.section-seven-container {
+    max-width:100%;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+    background-color: #f0f8ff;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    height: 80vh;
+
+    
+}
+
+.container-heading {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    
+}
+
+.review-container {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    gap: 2rem;
+    
+  
+}
+
+.card {
+   
+    box-sizing: border-box;
+    padding: 20px;
+    flex: 0 0 50%;
+    background-color: white;
+    color: #717275;
+    height: 20rem;
+    width: 17rem;
+    border-radius: 15px;
+}
+
+
+
+.card-imgdiv img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.review-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.heading-row {
+    display: flex;
+    align-items: center;
+}
+
+.heading-row div {
+    margin-left: 10px;
+}
+
+.slider-dots {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.dot {
+    height: 15px;
+    width: 15px;
+    margin: 0 5px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.dot.active {
+    background-color: #717171;
+}
+
+
+.rating-icon {
+    color: orangered;
+    display: flex;
+}
+
+
+
+.swiper {
+    width: 100%;
+    height: 100%;
+  }
+
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+.section-eight-container {
+    display: flex;
+    width: 100%;
+    height: 60vh;
+    position: relative;
+    z-index: 1;
+    background-color: #ed6241;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+
+.section-eight-container::after {
+    content: "";
+    background-image: url(../src/assets/images/millennial-group-young-businesspeople.jpg);
+    background-size: cover;
+    background-position: center;
+    opacity: 0.3;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+
+}
+
+.conatiner-left-card {
+    width: 40%;
+    color: white;
+}
+
+.left-card-heading {
+    font-size: 3.3rem;
+    font-weight: 800;
+}
+
+.left-card-text {
+    line-height: 2rem;
+    font-size: 1.1rem;
+}
+
+.create-an-account-button {
+    width: 10rem;
+    outline: none;
+    border: 2px solid white;
+    background-color: #d37865;
+    color: white;
+    padding: 1rem;
+    border-radius: 20px;
+}
+
+.create-an-account-button:hover {
+    outline: none;
+    background-color: white;
+    color: #d37865;
+}
+
+.conatiner-right-card {
+    display: flex;
+    gap: 2rem;
+}
+
+.post-button {
+    background-color: #d37865;
+    outline: none;
+    border: none;
+    color: white;
+    width: 7rem;
+    border-radius: 15px;
+}
+
+.post-button:hover {
+    border-bottom: 1px solid white;
+}
+
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 3rem;
+    flex-direction: column;
+    width: 100%;
+    height: 27rem;
+    padding-top: 3rem;
+}
+
+.footer-row-coloun {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.footer-row-coloun-one {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 25%;
+}
+
+.footer-row-coloun-two {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.footer-row-coloun-three {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+.footer-companyname-imgdiv {
+    display: flex;
+}
+
+.logo-imgDiv {
+    width: 18%;
+}
+
+.logo-imgDiv img {
+    width: 100%
+}
+
+.job-portal-div {
+    display: flex;
+    gap: 1rem;
+}
+
+.footer-row-coloun-two-heading {
+    font-size: 1.3rem;
+    font-weight: 800;
+}
+
+.footer-row-coloun-two-about {
+    font-size: 1.2rem;
+    color: #717275;
+}
+
+.footer-row-coloun-two-about:hover {
+    color: #ed6241;
+}
+
+/* .footer-row-coloun-two-blog {
+    font-size: 1.3rem;
+    color: #717275;
+}
+.footer-row-coloun-two-job {
+    font-size: 1.3rem;
+    color: #717275;
+}
+.footer-row-coloun-two-contact {
+    font-size: 1.3rem;
+    color: #717275;
+} */
+
+.job-portal-text {
+    font-size: 1.2rem;
+    color: #717275;
+}
+
+.job-portal-text:hover {
+    color: #ed6241;
+}
+
+.footer-row-coloun-three-title {
+    font-size: 1.3rem;
+    font-weight: 800;
+}
+
+.footer-row-coloun-three-link {
+    font-size: 1.2rem;
+    color: #717275;
+}
+
+
+.footer-row-coloun-three-link:hover {
+    color: #ed6241;
+}
+
+
+.footer-card-conatiner {
+    display: flex;
+    justify-content: center;
+    background-color: #f0f8ff;
+    border-radius: 10px;
+    flex-direction: column;
+    padding: 1rem;
+}
+
+.footer-row-coloun-four {
+    width: 30%;
+}
+
+.footer-row-coloun-four-title {
+    font-size: 1.5rem;
+    padding: 1rem;
+    font-weight: 600;
+
+}
+
+.card-title {
+    font-size: 1.3rem;
+    font-weight: 600;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.footer-button {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    padding: .7rem;
+    border-radius: 40px;
+    gap: 0.5rem;
+}
+
+.footer-button input {
+    outline: none;
+    border: none;
+}
+
+.footer-button button {
+    border-radius: 50%;
+    background-color: #5d52ba;
+    padding: .7rem;
+    outline: none;
+    border: none;
+}
+
+.fa-paper-plane {
+    color: white;
+}
+
+.footer-boder {
+    display: flex;
+    width: 100%;
+    height: 5rem;
+    background-color: #5d52ba;
+    justify-content: space-between;
+}
+
+.footer-boder-content-div {
+    display: flex;
+    gap:7rem;
+}
+
+.footer-boder-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    gap: 3rem;
+    padding: 1rem;
+}
+
+.footer-boder-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: .5rem;
+}
+
+.boder-icon {
+    color: white;
+    background-color:  #7f73eb;
+    border-radius: 50%;
+    width: 2rem;
+    height: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.boder-icon:hover {
+    background-color:#0dcaf0;
+    width: 2.5rem;
+    height: 2.5rem;
+
+}
+
+.arrow-container {
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:#0dcaf0;
+    width: 3.8rem;
+   
+}
+
+.arrow-container:hover {
+   background-color: #ed6241;;
+   
+}
+
+
